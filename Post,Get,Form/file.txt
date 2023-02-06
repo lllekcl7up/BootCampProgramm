@@ -1,0 +1,4 @@
+Dima;dima@mm.ru;123456
+Sveta;sveta@hh.ru;12345
+Kate;kate@list.ru;456789
+Stas;stas@mail.ru;4141

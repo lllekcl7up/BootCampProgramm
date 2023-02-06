@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{%block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+
+<style>
+    html{
+        background-color: aquamarine;
+    }
+</style>
+
+
+
+<body>
+
+{% if data %}
+<table>
+    <tr><th>Имя</th><th>Фамилия</th><th>Дата рождения</th></tr>
+    {%for row in data%}
+        <tr><td>{{row[0]}}</td><td>{{row[1]}}</td><td>{{row[2]}}</td></tr>
+<!--<tr> {{row[0]}} {{row[1]}} {{row[2]}} <br></tr> просто вывод в таблицу-->
+    {% endfor %}
+</table>
+{% endif %}
+
+<h3><a href="/index">Главная</a></h3>
+<h3><a href="/about">О нас</a></h3>
+
+<!--
+{% if name %}
+    <p>You Win</p>
+{% else %}
+    <p>You Lose</p>
+{% endif %}
+{% endblock %} endblock должен стоять после каждого цикла
+-->
+</body>
+</html>
